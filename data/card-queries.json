@@ -1,0 +1,16 @@
+{
+  "lookback_days": 3,
+  "limit_per_card": 50,
+  "cards": [
+    {"name":"Mike Trout 2011 Update #US175","query":"Mike Trout 2011 Topps Update US175"},
+    {"name":"Shohei Ohtani 2018 Update #US285","query":"Shohei Ohtani 2018 Topps Update US285"},
+    {"name":"Luka Doncic 2018 Prizm #280","query":"Luka Doncic 2018 Panini Prizm 280"},
+    {"name":"Patrick Mahomes 2017 Prizm #269","query":"Patrick Mahomes 2017 Panini Prizm 269"},
+    {"name":"Cooper Flagg Chrome #251","query":"Cooper Flagg 2025 Topps Chrome 251"},
+    {"name":"Victor Wembanyama 2023 Prizm #136","query":"Victor Wembanyama 2023 Panini Prizm 136"},
+    {"name":"Mickey Mantle 1952 Topps #311","query":"Mickey Mantle 1952 Topps 311"},
+    {"name":"Ken Griffey Jr. 1989 Upper Deck #1","query":"Ken Griffey Jr 1989 Upper Deck 1"},
+    {"name":"Wayne Gretzky 1979 O-Pee-Chee #18","query":"Wayne Gretzky 1979 O-Pee-Chee 18"},
+    {"name":"Lionel Messi 2004 Panini Mega Cracks #71","query":"Lionel Messi 2004 Panini Mega Cracks 71"}
+  ]
+}
