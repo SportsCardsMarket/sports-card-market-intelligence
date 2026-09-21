@@ -1,0 +1,37 @@
+name: Card API Sales Refresh
+
+on:
+  schedule:
+    - cron: "23 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pull verified completed sales
+        env:
+          THE_CARD_API_KEY: ${{ secrets.THE_CARD_API_KEY }}
+        run: python scripts/refresh_card_api.py
+
+      - name: Commit market dataset
+        run: |
+          git config user.name "Sports Card Market Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/card-market-live.json
+          git diff --cached --quiet || git commit -m "Refresh Card API completed sales"
+          git push
