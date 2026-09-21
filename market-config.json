@@ -1,0 +1,17 @@
+{
+  "target_sales": 100000,
+  "lookback_days": 90,
+  "refresh_frequency": "weekly",
+  "markets": ["EBAY_US"],
+  "sports": ["Football", "Basketball", "Baseball", "Hockey", "Soccer", "UFC", "Wrestling"],
+  "metrics": [
+    "median_sale_price",
+    "average_sale_price",
+    "sales_volume",
+    "price_trend_7d",
+    "price_trend_30d",
+    "liquidity",
+    "raw_to_psa9_spread",
+    "raw_to_psa10_spread"
+  ]
+}
