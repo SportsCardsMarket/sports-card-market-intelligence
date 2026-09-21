@@ -3,7 +3,7 @@ name: Card API Sales Refresh
 on:
   push:
     paths:
-      - ".github/workflows/card-api-refresh.yml"
+      - "README.md"
   schedule:
     - cron: "23 8 * * *"
   workflow_dispatch:
