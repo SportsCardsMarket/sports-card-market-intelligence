@@ -20,3 +20,6 @@ The card catalog is a research universe, not a claim that every card has live pr
 
 ## Portfolio framing
 This project demonstrates data ingestion, API integration, ETL normalization, scheduled automation, statistical summaries, filtering, interactive dashboards and static web deployment.
+
+
+<!-- Card API refresh trigger -->
